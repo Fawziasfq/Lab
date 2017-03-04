@@ -1,36 +1,12 @@
 require.config({
 	
 	paths:{
-		jquery:'sun/jquery',
-		STime:'sun/STime',
-		Ajax:'sun/Ajax',
+		 common:'common/common',
+         Ajax:'common/Ajax',
+         yGetSearchString:'YJ/yGetSearchString',
 	}
 });
-requirejs(['jquery','STime','Ajax'],function($,STime,Ajax){
-	//导航栏
-	var MO = MO || {};
-	// console.log(Ajax);
-	//滑动的nav
-	(function(){
-      var oNav = $('.nav'),
-        oUl = oNav.find('ul'),
-        oLi = oUl.find('li'),
-        oA = oLi.find('a'),
-        navAct = $('.nav-active'),
-        index = 5; // 当前目前显示nav部分第几个;
-
-      MO.setActive = function(index){
-        $(oA[index]).addClass('nav-active');
-      }
-      MO.setActive(index);
-      oA.hover(function(){
-        $(oA[index]).removeClass('nav-active');
-        $(this).addClass("nav-active");
-      },function(){
-        $(this).removeClass('nav-active');
-        MO.setActive(index);
-      })
-    })(); 
+requirejs(['common','yGetSearchString','Ajax'],function($,common,yGetSearchString,Ajax){
 	
 	ajax('http://rap.taobao.org/mockjsdata/10008/user/listGraduate.do','GET',function(data){
 		var eduData=JSON.parse(data).data;

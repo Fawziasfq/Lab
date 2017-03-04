@@ -1,6 +1,6 @@
 require.config({
 	paths: {
-		jquery: "jquery.min"
+		jquery: 'jquery',
 	}
 });
 define(['jquery'],function ($) {
@@ -16,9 +16,9 @@ define(['jquery'],function ($) {
 			oA.mouseover(function(e) {
 				if($(e.target).attr('class') != 'nav-active') {
 					var that = this;
-					$(this).addClass('nav-active');
+					$(this).addClass('nav-hover');
 					$(this).mouseout(function () {
-						$(that).removeClass('nav-active');
+						$(that).removeClass('nav-hover');
 					});
 				}
 			});

@@ -1,4 +1,3 @@
-/*重置*/
 body,html,ul,ol,li,p,h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 	margin: 0;
@@ -9,7 +8,6 @@ a {
 body {
 	font-family: "微软雅黑";
 	background-color: #eff0f0;
-	color: #030303;
 }
 li {
 	list-style: none;
@@ -124,42 +122,23 @@ h1.logo img {
 	color: #ee4242;
 	background-color: rgba(253,250,250,0.5);
 }
-/*main common part*/
+/* main start */
 .main {
 	width: 960px;
 	min-height: calc(100vh - 17.8125em);
 	margin: 0 auto;
 	background-color: #fdfafa;
+	padding:0 0 35px 0;
+	position: relative;
+	height: 480px;
 }
-.main .main-container {
-	margin: 0 auto;
-	width: 81%;
-}
-/* main start */
-.container-title {
-	margin-top: 35px;
-	text-align: center;
-	background: url('../img/lesson_tit_bg.png') no-repeat;
-	height: 40px;
-	width: 167px;
-	color: #fdfafa;
-	line-height: 40px;
-	font-size: 18px;
-	font-weight: bold;
-	font-family: "微软雅黑";
-}
-.container-content {
-	margin-top: 25px;
-	width: 100%;
-	height: auto;
-}
-
 
 /* footer start */
 .footer {
 	width: 960px;
 	height: 220px;
 	margin: 0 auto;
+	position: relative;
 }
 .footer-links {
 	width: 100%;
@@ -239,4 +218,185 @@ h1.logo img {
 .footer-bottom p {
 	font-size: 13px;
 	font-family: "微软雅黑";
+}
+/*左边内容*/
+.yLeftContent{
+	float:left;
+	margin:15px 0 0 15px;
+	position: relative;
+	width:225px;
+	height:460px;
+	display: inline-block;
+}
+/*研究动态*/
+.yResearch{
+	float: left;
+	/*position: relative;*/
+	width:100%;
+	min-height:220px;
+	/*border:1px solid #ccc;*/
+}
+/*研究动态、教学活动标题背景*/
+.yTitlebg{
+	position: relative;
+	width:100%;
+	height:35px;
+	background: #f1f3f3;
+	box-shadow: 0 2px 3px #c5c4c4,
+	            0 -2px 3px #c5c4c4;
+}
+/*研究动态、教学活动、关于我们标题字体样式*/
+.yTitle{
+	position: relative;
+	left:14px;
+	/*margin:0 0 0 14px;*/
+	font-size: 19px;
+	font-family: "微软雅黑";
+	color:#ee4242;
+	line-height: 35px;
+}
+/*内容列表*/
+.yConDetail{
+	float:left;
+	/*position: relative;*/
+	width:100%;
+	height:200px;
+}
+.yConDetail ul{
+	float:left;
+	/*position: relative;*/
+}
+.yConDetail li{
+	position: relative;
+	list-style: none;
+	width: 200px;
+	font-size: 12px;
+	padding:5px 14px 5px 14px;
+	border-bottom: 1px solid #cccdcd;
+}
+.yConDetail li p{
+	position: relative;
+	display: inline-block;
+	margin:4px 0 0 0;
+}
+/*教学活动*/
+.yTeach{
+	float: left;
+	/*position: relative;*/
+	width:100%;
+	min-height:255px;
+}
+/*右边内容*/
+.yRightContent{
+	position: relative;
+	top:15px;
+	left: 15px;
+	/*margin:-576px 0 0 238px;*/
+	background: #f1f3f3;
+	width:683px;
+	min-height:426px;
+	border-top:2px solid #ee4242;
+	display: inline-block;
+}
+.yRightContent img{
+	margin:0 auto;
+	display: block;
+	padding:10px;
+}
+.yRightContent p{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-indent: 2em;
+	line-height: 20px;
+	width:650px;
+	margin:0 auto;
+}
+/*more的样式*/
+.yMore{
+	position: absolute;
+	right:15px;
+	bottom:11px;
+	width:40px;
+	height:10px;
+	background: #0076c9;
+	border:1px solid #0076c9;
+	border-radius: 5px;
+	/*字体样式*/
+	color:#fff;
+	font-size: 8px;
+	line-height: 8px;
+	text-align: center;
+	/*设置为内联元素*/
+	display: inline-block;
+}
+/*链接样式*/
+/*文字链接样式*/
+.yConDetail li a:link{
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+.yConDetail li a:visited{
+	text-decoration: none;
+	display:inline-block;
+	color:#0076c9;
+	cursor: pointer;
+}
+.yConDetail li a:hover{
+	text-decoration: none;
+	display:inline-block;
+	color:#0076c9;
+	cursor: pointer;
+}
+.yConDetail li a:active{
+	text-decoration: none;
+	display:inline-block;
+	cursor: pointer;
+}
+/*more的链接样式*/
+.yTitlebg a:link{
+	text-decoration: none;
+	color:#fff;
+	cursor: pointer;
+}
+.yTitlebg a:visited{
+	text-decoration: none;
+	color:#fff;
+	cursor: pointer;
+}
+.yTitlebg a:hover{
+	text-decoration: none;
+	color:#ee4242;
+	background: #f1f3f3;
+	border:1px solid #f1f3f3;
+	cursor: pointer;
+	font-weight: bolder;
+}
+.yTitlebg a:active{
+	text-decoration: none;
+	color:#fff;
+	cursor: pointer;
+}
+.yRightContent a:link{
+	text-decoration: none;
+	color:#fff;
+	cursor: pointer;
+}
+.yRightContent a:visited{
+	text-decoration: none;
+	color:#fff;
+	cursor: pointer;
+}
+.yRightContent a:hover{
+	text-decoration: none;
+	color:#ee4242;
+	background: #f1f3f3;
+	border:1px solid #f1f3f3;
+	cursor: pointer;
+	font-weight: bolder;
+}
+.yRightContent a:active{
+	text-decoration: none;
+	color:#fff;
+	cursor: pointer;
 }

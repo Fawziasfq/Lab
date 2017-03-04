@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>数据与决策工程重点实验室</title>
-	<link rel="stylesheet" type="text/css" href="css/yOldMemberCss.css">
+	<link rel="stylesheet" type="text/css" href="css/indexcss.css">
 </head>
 <body>
 <!--头部-->
@@ -34,37 +34,71 @@
 	<!-- nav start -->
 	<div class="nav">
 		<ul>
-			<li><a href="index.html">首页</a></li>
+			<li><a href="index.html" class="nav-active">首页</a></li>
 			<li><a href="yAboutUs.html">关于我们</a></li>
 			<li><a href="jMembers.html">成员介绍</a></li>
 			<li><a href="jActivity.html">教学活动</a></li>
 			<li><a href="Sgraduated.html">研究动态</a></li>
 			<li><a href="Seducated.html">研究生培养</a></li>
 			<li><a href="Sproduct.html">产品与服务</a></li>
-			<li><a href="yOldMember.html" class="nav-active">往届成员</a></li>
+			<li><a href="yOldMember.html">往届成员</a></li>
 		</ul>
 	</div>
-	<!-- 内容 -->
-		<div class="main" id="yContent">
-			 <div class="yTitle" id="yTitle">
-		      往届成员
-		     </div>
+	<!--内容-->
+	<div class="main">
+		<!--左边内容-->
+		<div class="yLeftContent">
+			<!--研究内容-->
+			<div class="yResearch">
+				<div class="yTitlebg">
+					<span class="yTitle">研究动态</span> 
+					<!-- more按钮 -->					
+					<a class="yMore">more</a>
+				</div>
+				<!-- 内容列表 -->
+				<div class="yConDetail" id="yResearch"> 
+					<!-- <ul id="yResearchUl"> -->
+						<!-- <li>
+							<a><p>基于感知过程的复杂系统信息融合理论与应用研究
+							[2016-11-15]
+							</p></a>
+						</li>
+					</ul> -->
 
-		     <!-- 成员内容 -->		    		     
-		       <!-- <div class="yOldMem">  -->
-			     <!-- 毕业年份 -->
-		        <!--   <div class="yYear">2014年成员
-			         <a class="yMore" href="yOldMemberDetail.html">
-			         more
-			         </a>
-		         </div>
-		         <div class="yMemText">
-		        感谢以下成员在2014年对实验室做出的贡献，XXX,XXX,XXX,XXX,XXX，望再各自行业继续发展，再接再厉。
-		         </div>
-		      </div>	-->            
-		</div> 
+				</div>
+			</div> 
 
-	<div class="footer">
+			<!--教学活动-->
+			 <div class=yTeach>
+				<div class="yTitlebg">
+					<span class="yTitle">教学活动</span>
+					<!-- more按钮 -->
+						 <a class="yMore">more</a>
+				</div> 
+					<!-- 内容列表 -->
+					<div class="yConDetail" id="yTeach">
+						<!-- <ul>
+						<li>
+							<a><p>基于感知过程的复杂系统信息融合理论与应用研究
+							[2016-11-15]
+							</p></a>
+						</li>
+						</ul> -->
+					</div>
+				</div>
+			</div> 
+
+		<!-- 右边内容 -->
+		<div class="yRightContent">
+			 <span class="yTitle">关于我们</span>
+			<img src="img/ybg.jpg">
+			<p>数据与决策工程实验室是重庆邮电大学经济管理学院的一所重点实验室，成立于XXX年，由各类两院院士、国家杰青、科研人才等组成，目前主要成员有XX人，实验室以推进我国西部管理分析与软件开发能力为己任，拟建立数据工程与决策科学重点实验室致力管理决策分析模型方法与软件的研发、服务、及人才培养。实验室主要在数据工程与决策科学两个方向及其相关界面开展研究。</p>
+			<!-- more按钮 -->		
+				<a class="yMore" href="yAboutUs.html">more</a>		
+		</div>
+	</div>
+		<!-- 尾部 -->
+	 <div class="footer">
 		<div class="footer-links">
 			<div class="friend-link">
 				<h2>友情链接</h2>
@@ -119,8 +153,8 @@
 				</ul>
 			</div>
 		</div>
-		
-		
+
+		<!--尾部-->
 		<div class="footer-bottom">
 			<ul>
 				<li>版权所有</li>
@@ -138,6 +172,6 @@
 			</p>
 		</div>
 	</div>
-	<script data-main="js/ymain2" src="js/require.js" defer async="true"></script>
+	<script data-main="js/ymain1" src="js/require.js" ></script>
 </body>
 </html>

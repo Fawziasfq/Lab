@@ -1,5 +1,5 @@
 define(function(){
-	ajax = function ajax(url,type,fnSucc,fnFail,data){              //fnSucc是成功时的处理程序，fnFail是失败时的处理程序
+	ajax=function ajax(url,type,fnSucc,fnFail,data){              //fnSucc是成功时的处理程序，fnFail是失败时的处理程序
 	//1.创建Ajax对象
 	if(window.XMLHttpRequest){
 		var oAjax=new XMLHttpRequest();
@@ -31,5 +31,3 @@ define(function(){
 	return ajax;
 }
 });
-
-

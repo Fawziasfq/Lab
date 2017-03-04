@@ -1,4 +1,4 @@
-define(['Ajax'],function(Ajax){
+define(['Jiao/Ajax'],function(Ajax){
 	//在这里，window.onload 不起作用,但是可以直接访问页面中的元素包括图片（可能是放置在底部的原因）,保留疑问
 	/*window.onload = function () {
 		(function () {alert("加载完成运行")})();

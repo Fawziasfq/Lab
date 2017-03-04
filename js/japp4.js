@@ -1,5 +1,9 @@
 require.config({
-	baseUrl: "js/Jiao"
+	paths: {
+　　  common: 'common/common',
+      Ajax:'common/Ajax',
+      getSearchString:'Jiao/getSearchString',
+　　}
 })
 
 

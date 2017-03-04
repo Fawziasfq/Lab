@@ -1,7 +1,11 @@
 // main.js (app.js 入口文件)
 
 require.config({
-	baseUrl: "js/Jiao"
+	paths: {
+　　  common: 'common/common',
+      Ajax:'common/Ajax',
+      getSearchString:'Jiao/getSearchString',
+　　}
 })
 require(['common', 'Ajax', 'getSearchString'],function (common, Ajax, postData){
     container = document.getElementsByClassName('container-content')[0];

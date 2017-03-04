@@ -1,12 +1,11 @@
 require.config({
 	
 	paths:{
-		jquery:'sun/jquery',
-		STime:'sun/STime',
-		Ajax:'sun/Ajax',
+		common: 'common/common',
+        Ajax:'common/Ajax',
 	}
 });
-require(['jquery','STime','Ajax'],function($,STime,Ajax){
+require(['common','Ajax'],function(common,Ajax){
 	//导航栏
 	var MO = MO || {};
 	// console.log(Ajax);
@@ -41,8 +40,8 @@ require(['jquery','STime','Ajax'],function($,STime,Ajax){
     	var speople = document.getElementsByClassName("Speople")[0];
     	var stextArea = document.getElementsByClassName("StextArea")[0];
 
-    	stitleBar.innerHTML = "<h2>" + graData.date + "</h2>";
-    	stime.innerHTML = "发表日期：" + "<span>" + graData.id + "</span>";
+    	stitleBar.innerHTML = "<h2>" + graData.title + "</h2>";
+    	stime.innerHTML = "发表日期：" + "<span>" + graData.date + "</span>";
     	speople.innerHTML = "负责人：" + "<span>" + graData.author + "</span>";
     	stextArea.innerHTML = graData.detail;
     },function(){
